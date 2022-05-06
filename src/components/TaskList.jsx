@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useState } from "react"
 import TaskForm from "./TaskForm"
 import Task from "./Task"
 import '../stylesheets/TaskList.css'
@@ -6,6 +6,17 @@ import '../stylesheets/TaskList.css'
 const TaskList = () => {
 
   const [tasks, setTasks] = useState([])
+
+  useEffect(() => {
+    const savedTasks = JSON.parse(localStorage.getItem('tasks'))
+    if (savedTasks) {
+      setTasks(savedTasks)
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks))
+  }, [tasks])
 
   const addTask = (newTask) => {
     if (newTask.text.length > 0) {

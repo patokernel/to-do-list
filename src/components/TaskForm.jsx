@@ -30,7 +30,7 @@ const TaskForm = ({ newTaskReady }) => {
       <input
         className="task-input"
         type="text"
-        placeholder="Escribe una tarea"
+        placeholder="✏️ Escribe una tarea"
         name="text"
         onChange={handleChange}
         autoFocus
