@@ -1,20 +1,20 @@
 import '../stylesheets/Task.css'
-import { AiFillDelete } from "react-icons/ai"
+import { AiFillDelete } from 'react-icons/ai'
 
 const Task = ({ id, text, completed, completeTask, deleteTask }) => {
   return (
     <div className={completed ? 'task-container completed' : 'task-container'}>
       <div
-        className="task-text"
+        className='task-text'
         onClick={() => completeTask(id)}
       >
         {text}
       </div>
       <div
-        className="task-container-icons"
+        className='task-container-icons'
         onClick={() => deleteTask(id)}
       >
-        <AiFillDelete className="task-icon" />
+        <AiFillDelete className='task-icon' />
       </div>
     </div>
   )

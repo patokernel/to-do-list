@@ -15,23 +15,23 @@
 /* Colors */
 
 .task-container:nth-child(5n + 1) {
-  background-color: #0967aa;
+  background-color: #0473c3;
 }
 
 .task-container:nth-child(5n + 2) {
-  background-color: #055085;
+  background-color: #0466ad;
 }
 
 .task-container:nth-child(5n + 3) {
-  background-color: #02365c;
+  background-color: #045996;
 }
 
 .task-container:nth-child(5n + 4) {
-  background-color: #002A47;
+  background-color: #054e83;
 }
 
 .task-container:nth-child(5n + 5) {
-  background-color: #002138;
+  background-color: #044878;
 }
 
 /* Text */

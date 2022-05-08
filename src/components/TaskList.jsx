@@ -1,6 +1,6 @@
-import { Fragment, useEffect, useState } from "react"
-import TaskForm from "./TaskForm"
-import Task from "./Task"
+import { Fragment, useEffect, useState } from 'react'
+import TaskForm from './TaskForm'
+import Task from './Task'
 import '../stylesheets/TaskList.css'
 
 const TaskList = () => {
@@ -42,7 +42,7 @@ const TaskList = () => {
   return (
     <Fragment>
       <TaskForm newTaskReady={addTask} />
-      <div className="task-list-container">
+      <div className='task-list-container'>
         {
           tasks.map((task) =>
             <Task

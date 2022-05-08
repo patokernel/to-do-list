@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=MonteCarlo&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +64,7 @@ h1 {
   width: 600px;
   min-height: 500px;
   background-color: #d0d0d5;
-  padding: 25px;
+  padding: 10px 25px 25px 25px;
   margin: 10px;
   border-radius: 26px;
   margin-top: auto;

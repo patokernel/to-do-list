@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from 'react'
 import '../stylesheets/TaskForm.css'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -24,19 +24,19 @@ const TaskForm = ({ newTaskReady }) => {
 
   return (
     <form
-      className="task-form"
+      className='task-form'
       onSubmit={handleSubmit}
     >
       <input
-        className="task-input"
-        type="text"
-        placeholder="✏️ Escribe una tarea"
-        name="text"
+        className='task-input'
+        type='text'
+        placeholder='✏️ Tarea Nueva'
+        name='text'
         onChange={handleChange}
         autoFocus
-        autoComplete="off"
+        autoComplete='off'
       />
-      <button className="task-button">
+      <button className='task-button'>
         Agregar
       </button>
     </form>

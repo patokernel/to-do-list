@@ -1,12 +1,15 @@
 import './App.css'
 import githubLogo from './images/githubLogo.png'
+import CurrentDate from './components/CurrentDate'
 import TaskList from './components/TaskList'
 
 function App() {
   return (
     <div className="App">
       <div className='todo-list-principal'>
-        <h1>Mis tareas</h1>
+        <CurrentDate />
+        <hr />
+        <h1>Mis Tareas</h1>
         <TaskList />
       </div>
       <div className='github-logo-container'>
